@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player </title>
+    <title>Unity WebGL Player | Test</title>
   </head>
   <body style="text-align: center">
-    <canvas id="unity-canvas" width=900px height=680px style="width: 1860px; height: 920px; background: #231F20"></canvas>
+    <canvas id="unity-canvas" width=1860 height=920 style="width: 1860px; height: 920px; background: #231F20"></canvas>
     <script src="Build/uniweb.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -18,12 +18,12 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/uniweb.data.gz",
-        frameworkUrl: "Build/uniweb.framework.js.gz",
-        codeUrl: "Build/uniweb.wasm.gz",
+        dataUrl: "Build/uniweb.data.unityweb",
+        frameworkUrl: "Build/uniweb.framework.js.unityweb",
+        codeUrl: "Build/uniweb.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "YuanQu",
+        companyName: "Test123",
+        productName: "Test",
         productVersion: "0.1",
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
